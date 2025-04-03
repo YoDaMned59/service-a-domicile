@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/service-a-domicile/static/css/main.2e662a65.css",
+    "main.js": "/service-a-domicile/static/js/main.bd57e3f5.js",
+    "static/media/miniature_image.jpg": "/service-a-domicile/static/media/miniature_image.4cc96a1cfae63cf36ceb.jpg",
+    "static/media/pedicure.jpg": "/service-a-domicile/static/media/pedicure.a7c97f1ffa1f4af524a2.jpg",
+    "static/media/rehaussment cils.webp": "/service-a-domicile/static/media/rehaussment cils.91a4dfd4328d50632ce2.webp",
+    "static/media/soins-visage.jpeg": "/service-a-domicile/static/media/soins-visage.03d277207dce2f98cc21.jpeg",
+    "static/media/logo.png": "/service-a-domicile/static/media/logo.618fb7fe478f2fa98e72.png",
+    "static/media/vernis femme.avif": "/service-a-domicile/static/media/vernis femme.c251d9155a334a8b528b.avif",
+    "index.html": "/service-a-domicile/index.html",
+    "main.2e662a65.css.map": "/service-a-domicile/static/css/main.2e662a65.css.map",
+    "main.bd57e3f5.js.map": "/service-a-domicile/static/js/main.bd57e3f5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2e662a65.css",
+    "static/js/main.bd57e3f5.js"
+  ]
+}
