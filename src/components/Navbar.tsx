@@ -1,24 +1,8 @@
 import { AppBar, Toolbar, Typography, Button, Box } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
 import logo from '../assets/logo.png';
-import { useState, useEffect } from 'react';
 
 const Navbar = () => {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [isAdminEmail, setIsAdminEmail] = useState(false);
-
-  useEffect(() => {
-    const isAuth = sessionStorage.getItem('adminAuthenticated') === 'true';
-    setIsAuthenticated(isAuth);
-    
-    // Vérifier si l'email de l'administrateur est stocké
-    const adminCredentials = localStorage.getItem('adminCredentials');
-    if (adminCredentials) {
-      const { email } = JSON.parse(adminCredentials);
-      setIsAdminEmail(email === 'sduviviertech@outlook.fr');
-    }
-  }, []);
-
   return (
     <AppBar position="static" sx={{ 
       backgroundColor: '#fff',

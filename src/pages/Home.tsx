@@ -8,22 +8,21 @@ import {
   CardContent,
   CardMedia,
   Button,
-  Rating,
-  useTheme
+  Rating
 } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import homeData from '../data/home.json';
+import { images } from '../utils/imageImports';
 
 const Home = () => {
   const navigate = useNavigate();
-  const theme = useTheme();
 
   return (
     <Box>
       {/* Hero Section */}
       <Box
         sx={{
-          backgroundImage: `url(${require(`../assets/${homeData.hero.image}`)})`,
+          backgroundImage: `url(${images[homeData.hero.image as keyof typeof images]})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           height: '60vh',
@@ -131,7 +130,7 @@ const Home = () => {
                 <CardMedia
                   component="img"
                   height="200"
-                  image={require(`../assets/${service.image}`)}
+                  image={images[service.image as keyof typeof images]}
                   alt={service.title}
                   sx={{
                     objectFit: 'cover',
