@@ -1,8 +1,30 @@
-import { AppBar, Toolbar, Typography, Button, Box } from '@mui/material';
+import React from 'react';
+import { AppBar, Toolbar, Typography, Button, Box, IconButton, Menu, MenuItem, useMediaQuery, useTheme } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
+import MenuIcon from '@mui/icons-material/Menu';
 import logo from '../assets/logo.png';
 
 const Navbar = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+
+  const handleMenu = (event: React.MouseEvent<HTMLElement>) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const menuItems = [
+    { label: 'Accueil', path: '/' },
+    { label: 'À propos', path: '/about' },
+    { label: 'Services', path: '/services' },
+    { label: 'Réserver', path: '/booking' },
+    { label: 'Administration', path: '/admin' }
+  ];
+
   return (
     <AppBar position="static" sx={{ 
       backgroundColor: '#fff',
@@ -60,96 +82,85 @@ const Navbar = () => {
             Home Beautician
           </Typography>
         </Box>
-        <Box sx={{ 
-          display: 'flex', 
-          gap: 3,
-          '& .MuiButton-root': {
-            borderRadius: '25px',
-            padding: '12px 24px',
-            transition: 'all 0.3s ease'
-          }
-        }}>
-          <Button
-            color="inherit"
-            component={RouterLink}
-            to="/"
-            sx={{ 
-              color: '#2c3e50',
-              fontSize: '1.2rem',
-              fontWeight: 500,
-              '&:hover': {
-                color: '#e74c3c',
-                backgroundColor: 'rgba(231, 76, 60, 0.1)'
-              }
-            }}
-          >
-            Accueil
-          </Button>
-          <Button
-            color="inherit"
-            component={RouterLink}
-            to="/about"
-            sx={{ 
-              color: '#2c3e50',
-              fontSize: '1.2rem',
-              fontWeight: 500,
-              '&:hover': {
-                color: '#e74c3c',
-                backgroundColor: 'rgba(231, 76, 60, 0.1)'
-              }
-            }}
-          >
-            À propos
-          </Button>
-          <Button
-            color="inherit"
-            component={RouterLink}
-            to="/services"
-            sx={{ 
-              color: '#2c3e50',
-              fontSize: '1.2rem',
-              fontWeight: 500,
-              '&:hover': {
-                color: '#e74c3c',
-                backgroundColor: 'rgba(231, 76, 60, 0.1)'
-              }
-            }}
-          >
-            Services
-          </Button>
-          <Button
-            color="inherit"
-            component={RouterLink}
-            to="/booking"
-            sx={{ 
-              color: '#2c3e50',
-              fontSize: '1.2rem',
-              fontWeight: 500,
-              '&:hover': {
-                color: '#e74c3c',
-                backgroundColor: 'rgba(231, 76, 60, 0.1)'
-              }
-            }}
-          >
-            Réserver
-          </Button>
-          <Button 
-            color="inherit" 
-            component={RouterLink} 
-            to="/admin"
-            sx={{ 
-              color: '#2c3e50',
-              fontSize: '1.2rem',
-              fontWeight: 500,
-              '&:hover': {
-                color: '#e74c3c',
-                backgroundColor: 'rgba(231, 76, 60, 0.1)'
-              }
-            }}
-          >
-            Administration
-          </Button>
-        </Box>
+        {isMobile ? (
+          <>
+            <IconButton
+              size="large"
+              edge="start"
+              color="inherit"
+              aria-label="menu"
+              onClick={handleMenu}
+              sx={{ 
+                color: '#2c3e50',
+                '&:hover': {
+                  color: '#e74c3c',
+                  backgroundColor: 'rgba(231, 76, 60, 0.1)'
+                }
+              }}
+            >
+              <MenuIcon />
+            </IconButton>
+            <Menu
+              anchorEl={anchorEl}
+              open={Boolean(anchorEl)}
+              onClose={handleClose}
+              sx={{
+                '& .MuiPaper-root': {
+                  backgroundColor: '#fdf6f6',
+                  minWidth: '200px'
+                }
+              }}
+            >
+              {menuItems.map((item) => (
+                <MenuItem
+                  key={item.path}
+                  onClick={handleClose}
+                  component={RouterLink}
+                  to={item.path}
+                  sx={{
+                    color: '#2c3e50',
+                    '&:hover': {
+                      color: '#e74c3c',
+                      backgroundColor: 'rgba(231, 76, 60, 0.1)'
+                    }
+                  }}
+                >
+                  {item.label}
+                </MenuItem>
+              ))}
+            </Menu>
+          </>
+        ) : (
+          <Box sx={{ 
+            display: 'flex', 
+            gap: 3,
+            '& .MuiButton-root': {
+              borderRadius: '25px',
+              padding: '12px 24px',
+              transition: 'all 0.3s ease'
+            }
+          }}>
+            {menuItems.map((item) => (
+              <Button
+                key={item.path}
+                color="inherit"
+                component={RouterLink}
+                to={item.path}
+                sx={{ 
+                  color: '#2c3e50',
+                  fontSize: '1.2rem',
+                  fontWeight: 500,
+                  '&:hover': {
+                    color: '#e74c3c',
+                    backgroundColor: 'rgba(231, 76, 60, 0.1)'
+                  }
+                }}
+              >
+                {item.label}
+              </Button>
+            ))}
+          </Box>
+        )}
       </Toolbar>
     </AppBar>
   );
