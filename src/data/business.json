@@ -1,0 +1,28 @@
+{
+  "name": "À Fleur de Peau",
+  "address": "6 rue neuve, 59270 Meteren",
+  "phone": "06 12 34 56 78",
+  "email": "contact@afleurdepeau.fr",
+  "instagram": "afleurdepeau",
+  "facebook": "afleurdepeau",
+  "whatsapp": "0612345678",
+  "location": {
+    "lat": 50.7859,
+    "lng": 2.6743
+  },
+  "workZone": {
+    "center": {
+      "lat": 50.7897,
+      "lng": 2.5947
+    },
+    "maxDistance": 20
+  },
+  "workingHours": {
+    "start": "09:00",
+    "end": "19:00",
+    "break": {
+      "start": "12:00",
+      "end": "13:00"
+    }
+  }
+} 

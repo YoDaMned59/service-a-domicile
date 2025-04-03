@@ -1,0 +1,5 @@
+{
+  "stripe": {
+    "publicKey": "votre_clé_publique_stripe"
+  }
+} 

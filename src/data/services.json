@@ -1,0 +1,192 @@
+{
+  "categories": [
+    {
+      "id": "epilation",
+      "name": "Épilation",
+      "icon": "Spa",
+      "description": "Épilation à la cire ou au fil pour un résultat durable et soyeux",
+      "services": [
+        {
+          "id": "jambes-completes",
+          "name": "Jambes complètes",
+          "price": 30,
+          "duration": 45
+        },
+        {
+          "id": "demi-jambes",
+          "name": "Demi-jambes",
+          "price": 20,
+          "duration": 30
+        },
+        {
+          "id": "aisselles",
+          "name": "Aisselles",
+          "price": 15,
+          "duration": 15
+        },
+        {
+          "id": "maillot",
+          "name": "Maillot",
+          "price": 20,
+          "duration": 20
+        }
+      ]
+    },
+    {
+      "id": "ongles",
+      "name": "Ongles",
+      "icon": "Star",
+      "description": "Pose de vernis, onglerie, soins des ongles naturels et pose de capsules",
+      "services": [
+        {
+          "id": "manucure-simple",
+          "name": "Manucure simple",
+          "price": 25,
+          "duration": 30
+        },
+        {
+          "id": "pose-vernis-semi-permanent",
+          "name": "Pose vernis semi-permanent",
+          "price": 35,
+          "duration": 45
+        },
+        {
+          "id": "pose-capsules",
+          "name": "Pose de capsules",
+          "price": 45,
+          "duration": 60
+        }
+      ]
+    },
+    {
+      "id": "soins-visage",
+      "name": "Soins Visage",
+      "icon": "Favorite",
+      "description": "Nettoyage, exfoliation, masque et soins adaptés à votre type de peau",
+      "services": [
+        {
+          "id": "soin-basic",
+          "name": "Soin basique",
+          "price": 40,
+          "duration": 45
+        },
+        {
+          "id": "soin-anti-age",
+          "name": "Soin anti-âge",
+          "price": 60,
+          "duration": 60
+        },
+        {
+          "id": "nettoyage-profond",
+          "name": "Nettoyage profond",
+          "price": 50,
+          "duration": 60
+        }
+      ]
+    },
+    {
+      "id": "soins-corps",
+      "name": "Soins Corps",
+      "icon": "Spa",
+      "description": "Gommage, enveloppement, massage et soins hydratants",
+      "services": [
+        {
+          "id": "massage-relaxant",
+          "name": "Massage relaxant",
+          "price": 60,
+          "duration": 60
+        },
+        {
+          "id": "gommage-corps",
+          "name": "Gommage corps",
+          "price": 45,
+          "duration": 45
+        },
+        {
+          "id": "enveloppement",
+          "name": "Enveloppement",
+          "price": 50,
+          "duration": 45
+        }
+      ]
+    },
+    {
+      "id": "maquillage",
+      "name": "Maquillage",
+      "icon": "Star",
+      "description": "Maquillage de jour, de soirée et maquillage pour événements spéciaux",
+      "services": [
+        {
+          "id": "maquillage-jour",
+          "name": "Maquillage de jour",
+          "price": 35,
+          "duration": 30
+        },
+        {
+          "id": "maquillage-soiree",
+          "name": "Maquillage de soirée",
+          "price": 45,
+          "duration": 45
+        },
+        {
+          "id": "maquillage-mariee",
+          "name": "Maquillage mariée",
+          "price": 80,
+          "duration": 60
+        }
+      ]
+    },
+    {
+      "id": "cils",
+      "name": "Réhaussement de Cils",
+      "icon": "Favorite",
+      "description": "Pose de cils, réhaussement et soins des cils",
+      "services": [
+        {
+          "id": "rehaussement-cils",
+          "name": "Réhaussement de cils",
+          "price": 45,
+          "duration": 45
+        },
+        {
+          "id": "teinture-cils",
+          "name": "Teinture des cils",
+          "price": 25,
+          "duration": 30
+        },
+        {
+          "id": "extension-cils",
+          "name": "Extension de cils",
+          "price": 80,
+          "duration": 90
+        }
+      ]
+    },
+    {
+      "id": "mains-pieds",
+      "name": "Beauté des Mains et Pieds",
+      "icon": "Spa",
+      "description": "Manucure, pédicure, soins des cuticules et massage",
+      "services": [
+        {
+          "id": "manucure-complete",
+          "name": "Manucure complète",
+          "price": 35,
+          "duration": 45
+        },
+        {
+          "id": "pedicure-complete",
+          "name": "Pédicure complète",
+          "price": 40,
+          "duration": 50
+        },
+        {
+          "id": "soin-paraffine",
+          "name": "Soin à la paraffine",
+          "price": 25,
+          "duration": 30
+        }
+      ]
+    }
+  ]
+} 

@@ -1,0 +1,11 @@
+{
+  "apiUrl": "https://nominatim.openstreetmap.org",
+  "searchEndpoint": "/search",
+  "reverseEndpoint": "/reverse",
+  "format": "json",
+  "addressDetails": 1,
+  "limit": 1,
+  "countryCodes": "fr",
+  "language": "fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7",
+  "userAgent": "À Fleur de Peau Booking System"
+} 

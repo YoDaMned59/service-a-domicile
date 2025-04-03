@@ -1,0 +1,72 @@
+{
+  "hero": {
+    "title": "À Fleur de Peau",
+    "subtitle": "Votre institut de beauté à domicile",
+    "description": "Profitez de nos services de beauté dans le confort de votre maison. Nous nous déplaçons dans un rayon de 20km autour de Bavinchove.",
+    "image": "images/miniature_image.jpg"
+  },
+  "services": {
+    "title": "Nos Services",
+    "description": "Découvrez notre gamme complète de services de beauté",
+    "items": [
+      {
+        "title": "Ongles",
+        "description": "Pose de vernis, onglerie, soins des ongles naturels et pose de capsules",
+        "image": "images/vernis femme.avif"
+      },
+      {
+        "title": "Soins Visage",
+        "description": "Nettoyage, exfoliation, masque et soins adaptés à votre type de peau",
+        "image": "images/soins-visage.jpeg"
+      },
+      {
+        "title": "Soins Corps",
+        "description": "Gommage, enveloppement, massage et soins hydratants",
+        "image": "images/miniature_image.jpg"
+      },
+      {
+        "title": "Réhaussement de Cils",
+        "description": "Pose de cils, réhaussement et soins des cils",
+        "image": "images/rehaussment cils.webp"
+      },
+      {
+        "title": "Beauté des Mains et Pieds",
+        "description": "Manucure, pédicure, soins des cuticules et massage",
+        "image": "images/pedicure.jpg"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Témoignages",
+    "description": "Ce que nos clients disent de nous",
+    "items": [
+      {
+        "name": "Marie D.",
+        "text": "Un service exceptionnel ! La praticienne est très professionnelle et à l'écoute. Je recommande vivement.",
+        "rating": 5
+      },
+      {
+        "name": "Sophie L.",
+        "text": "Très satisfaite de mes soins. Le fait de pouvoir recevoir les soins à domicile est un vrai plus.",
+        "rating": 5
+      },
+      {
+        "name": "Julie M.",
+        "text": "Des prestations de qualité, un service impeccable. Je suis ravie de mes soins.",
+        "rating": 5
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "description": "Pour toute question ou réservation, n'hésitez pas à nous contacter",
+    "phone": "06 12 34 56 78",
+    "email": "contact@afleurdepeau.fr",
+    "address": "6 rue neuve, 59270 Meteren",
+    "social": {
+      "instagram": "afleurdepeau",
+      "facebook": "afleurdepeau",
+      "whatsapp": "0612345678"
+    }
+  }
+} 
